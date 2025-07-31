@@ -114,21 +114,41 @@ a {
 } 
 
 .home-img .img-box {
-  width: 32vw;
-  height: 32vw;
-  background: red;
+  position: relative;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.home-img .img-box::before, .home-img .img-box::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background:conic-gradient(transparent,transparent,transparent, #7cf03d);
 }
 .home-img .img-box .img-item {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: slateblue;
+  background: #1f242d;
+  display: flex;
+  border:1px solid #1f242d;
+  z-index: 1;
+  justify-content:center;
+  overflow: hidden;
 }
 .home-img .img-box .img-item img {
   position: absolute;
+  top: 30px;
   display: block;
   width: 85%;
   object-fit: cover;
+  mix-blend-mode:lighten;
 }
