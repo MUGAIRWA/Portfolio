@@ -17,4 +17,15 @@ a {
   color: #fff;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 9%;
+}
 
