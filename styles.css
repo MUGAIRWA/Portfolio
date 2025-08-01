@@ -179,7 +179,20 @@ a {
   height: 500px;
   border-radius: 50%;
   background:conic-gradient(transparent,transparent,transparent, #7cf03d);
+  transform:rotate(0deg);
+  animation: rotate-border 10s linear infinite;
 }
+.home-img .img-box::after {
+  animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 .home-img .img-box .img-item {
   position: relative;
   width: 100%;
