@@ -70,6 +70,8 @@ a {
 
 }
 
+
+
 .home {
   gap:50px;
   height: 100vh;
@@ -303,7 +305,7 @@ a {
   border-radius: 50%;
   background: conic-gradient(transparent, transparent, transparent, #7cf03d);
   transform: rotate(0deg);
-  /*animation: rotate-border 10s linear infinite;*/
+  animation: rotate-border 10s linear infinite;
 }
 
 .about-img .img-box::after {
@@ -360,3 +362,216 @@ a {
     transform: translateY(0%);
   }
 }
+/* ... Resume Section Styling 
+
+.resume {
+  background: #1f242d;
+  color: #fff;
+  padding: 60px 9%;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #23265a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 40px 32px;
+}
+
+.resume-box {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.resume-box h2 {
+  font-size: 2.2rem;
+  color: #7cf03d;
+  margin-bottom: 10px;
+}
+
+.resume-box .desc {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.resume-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.resume-item {
+  background: #292c47;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.resume-item:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 6px 24px rgba(124, 240, 61, 0.15);
+}
+
+.resume-item .year {
+  font-weight: 600;
+  color: #7cf03d;
+  margin-bottom: 6px;
+}
+
+.resume-item h3 {
+  font-size: 1.3rem;
+  margin: 4px 0 6px 0;
+  color: #fff;
+}
+
+.resume-item .company {
+  font-size: 1rem;
+  color: #b0b3d6;
+  margin-bottom: 8px;
+}
+
+.resume-item p {
+  color: #d1d1d1;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+*/
+/* Resume Section */
+/* ...existing code... */
+
+.resume {
+  background: #181c23;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.resume-header {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.resume-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.resume-header h2 span {
+  color: #7cf03d;
+}
+
+.resume-header p {
+  color: #b0b3d6;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.resume-card {
+  background: #23283b;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resume-year {
+  color: #7cf03d;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.resume-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 4px 0;
+}
+
+.resume-type {
+  color: #b0b3d6;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.resume-type .dot {
+  width: 10px;
+  height: 10px;
+  background: #7cf03d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.resume-card p {
+  color: #d1d1d1;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.resume-education h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.resume-education h2 span {
+  color: #7cf03d; /* Green color for "Education" */
+}
+
+/* ...existing code... */
+
+.resume-info h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #7cf03d;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.resume-info p {
+  color: #b0b3d6;
+  font-size: 1.08rem;
+  margin-bottom: 22px; /* space below paragraph */
+}
+
+.resume-info .btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #7cf03d;
+  border: none;
+  border-radius: 32px;
+  font-size: 1.1rem;
+  color: #181c23;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(124, 240, 61, 0.15);
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 8px; 
+}
+
+
+
+
