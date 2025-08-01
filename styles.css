@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*body {
   background-color: #fff;
 } */
@@ -235,4 +239,30 @@ a {
     100% {
         transform: translateY(0%);
     }
+}
+/* About section styling */
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 9%;
+  background-color: #1f242d;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 1.8s;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #7cf03d;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
 }
