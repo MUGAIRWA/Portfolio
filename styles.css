@@ -445,6 +445,10 @@ a {
   background: #181c23;
   color: #fff;
   padding: 60px 0;
+  visibility: hidden;
+  opacity: 0;
+  animation: show-content 1.5s linear forwards;
+  animation-delay: 2s;
 }
 
 .resume-container {
@@ -571,6 +575,77 @@ a {
   text-decoration: none;
   margin-top: 8px; 
 }
+
+/* ...existing code... */
+
+.skills {
+  background: #181c23;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.skills .heading {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skills .heading span {
+  color: #7cf03d;
+}
+
+.skills .desc {
+  color: #b0b3d6;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 28px;
+  justify-items: center;
+}
+
+.skill-item {
+  background: #23283b;
+  border-radius: 20px;
+  width: 160px;
+  height: 160px;
+  padding: 28px 0 18px 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(124, 240, 61, 0.12);
+}
+
+.skill-item i {
+  font-size: 3rem;
+  color: #7cf03d;
+  margin-bottom: 12px;
+}
+
+.skill-item span {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 
 
 
