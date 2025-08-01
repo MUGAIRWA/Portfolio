@@ -218,18 +218,17 @@ a {
   mix-blend-mode:lighten;
 }
 
-.bars-animaion{
+.bars-animation{
     position:absolute;
     width: 100%;
     height: 100%;
     display: flex;
     z-index: -1;
 }
-.bars-animaion .bar{
+.bars-animation .bar{
     width: 100%;
     height: 100%;
     background: #1f242d;
-   
     transform: translateY(-100%);
     animation: show-bars 0.5s ease-in-out forwards;
     animation-delay: calc(0.1s * var(--i));
@@ -242,10 +241,10 @@ a {
 }
 /* About section styling */
 .about {
+  position: relative;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 60px 9%;
   background-color: #1f242d;
   color: #fff;
@@ -255,14 +254,109 @@ a {
   animation-delay: 1.8s;
 }
 
-.about h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #7cf03d;
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 50px;
 }
 
-.about p {
+.about-img {
+  flex: 1;
+}
+
+.about-info {
+  flex: 1;
+  text-align: left;
+}
+
+.about-info h2 {
+  font-size: 40px;
+  color: #7cf03d;
+  margin-bottom: 20px;
+}
+
+.about-info p {
   font-size: 18px;
   line-height: 1.6;
   max-width: 800px;
+}
+.about-img .img-box {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-img .img-box::before,
+.about-img .img-box::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  transform: rotate(0deg);
+  /*animation: rotate-border 10s linear infinite;*/
+}
+
+.about-img .img-box::after {
+  animation-delay: -5s;
+}
+
+.about-img .img-box .img-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #1f242d;
+  display: flex;
+  border: 1px solid #1f242d;
+  z-index: 1;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-img .img-box .img-item img {
+  position: absolute;
+  top: 30px;
+  display: block;
+  width: 85%;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+}
+
+
+.bars-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.bars-animaion .bar {
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  transform: translateY(-100%);
+}
+.bars-animaion.active .bar {
+  animation: show-bars 0.5s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+
+@keyframes show-bars {
+  100% {
+    transform: translateY(0%);
+  }
 }
