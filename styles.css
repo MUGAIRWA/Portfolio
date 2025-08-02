@@ -1,4 +1,7 @@
+/* Importing Google Font "Poppins" with various weights */
 @import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Resetting default browser styles and setting a smooth scroll behavior */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +18,7 @@ html {
   background-color: #fff;
 } */
  
-
+/* Navbar container styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,7 +29,7 @@ html {
   top: 0;
   z-index: 1000;
 }
-
+/* logo styling */
 .logo {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
@@ -37,11 +40,13 @@ html {
   transition: 0.4s ease;
 }
 
+/* logo hover effect */
 .logo:hover {
   color: #a0ff65;   
   transform: scale(1.05);
 }
 
+/* Navbar list styling */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -50,10 +55,12 @@ html {
   padding: 0;
 }
 
+/* Navbar list item styling */
 .navbar li {
   list-style: none;
 }
 
+/* Navbar link styling */
 .navbar a {
   color: #fff;
   text-decoration: none;
@@ -62,24 +69,12 @@ html {
   transition: 0.3s;
 }
 
+/* Navbar link hover effect */
 .navbar a:hover {
   color: #7cf03d;
 }
 
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-
+/* Fixed navbar positioning and animation setup */
 .navbar {
   position: fixed;
   top: 0;
@@ -96,6 +91,8 @@ html {
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.2s;
 }
+
+/* Keyframes for showing content with fade-in effect */
 @keyframes show-content {
   100% {
     visibility: visible;
@@ -104,34 +101,31 @@ html {
   
 }
 
-/*.navbar .logo {
-  font-size: 30px;
-  font-weight: 700;
-}*/
-
+/* Navbar list styling with flexbox*/
 .navbar ul {
   display: flex;
-
 }
 
+/* Navbar list item styling with margin */
 .navbar ul li {
   list-style:none;
   margin-left:35px;
 }
 
+/* Navbar link styling and transition */
 .navbar ul li a {
   font-size:20px;
   font-weight:500;
   transition:0.5s;
 }
-
+/* Navbar link hover effect */
 .navbar ul li a:hover {
   color: #7cf037;
 
 }
 
 
-
+/* Home section styling with flexbox, height and animation */
 .home {
   gap:50px;
   height: 100vh;
@@ -145,13 +139,17 @@ html {
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.6s;
 }
+/* Home info heading 1 styling */
 .home-info h1 {
     font-size: 55px;
+    
 }
+/* Home info heading 2 styling */
 .home-info h2 {
   font-size:32px;
   margin-top: -10px;
 }
+/* Home info heading 2 span styling for animated text effect */
 .home-info h2 span {
     position: relative;
     display: inline-block;
@@ -160,11 +158,13 @@ html {
     animation:display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
+/* Keyframes for text display animation */
 @keyframes display-text {
   25%,100% {
     display:none;
   }
 }
+/* Home info heading 2 span before pseudo-element for animated underline effect */
 .home-info h2 span::before {
   content: attr(data-text);
   position:absolute;
@@ -175,6 +175,7 @@ html {
   overflow: hidden;
   animation: fill-text 4s linear infinite;
 }
+/* Keyframes for filling text animation */
 @keyframes fill-text {
   10%, 100% {
     width: 0;
@@ -184,14 +185,18 @@ html {
   }
 }
 
+/* Home info paragraph styling */
 .home-info p {
   font-size: 16px;
   margin: 10px 0 25px;
+  text-align: justify;
 }
+/* Home info button and social icons container styling */
 .home-info .btn-sci {
     display:flex;
     align-items:center;
 }
+/* Button styling */
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -204,14 +209,17 @@ html {
     font-weight: 600;
     transition: 0.5s;
 }
+/* Button hover effect */
 .btn:hover {
     background: transparent;
     color: #7cf03d;
     box-shadow: none;
 }
+/* Social icons container styling */
 .home-info .btn-sci .sci {
     margin-left: 20px;
 }
+/* Social icons link styling */
 .home-info .btn-sci .sci a {
     display: inline-flex;
     padding: 8px;
@@ -222,12 +230,13 @@ html {
     margin: 0 8px;
     transition: 0.5s;
 }
+/* Social icon link hover effect */
 .home-info .btn-sci .sci a:hover {
     background: #7cf03d;
     color: #1f242d;
     box-shadow: 0 0 10px #7cf03d;
 } 
-
+/* Home image box styling for border animation */
 .home-img .img-box {
   position: relative;
   width: 30vw;
@@ -239,6 +248,7 @@ html {
   align-items: center;
   overflow: hidden;
 }
+/* Home image box pseudo-elements for rotating border effect */
 .home-img .img-box::before, .home-img .img-box::after {
   content: "";
   position: absolute;
@@ -249,16 +259,18 @@ html {
   transform:rotate(0deg);
   animation: rotate-border 10s linear infinite;
 }
+/* Delaying the after pseudo-element's animation */
 .home-img .img-box::after {
   animation-delay: -5s;
 }
-
+/* Keyframes for rotating the border */
 @keyframes rotate-border {
   100% {
     transform: rotate(360deg);
   }
 }
 
+/* Home image inner item styling */
 .home-img .img-box .img-item {
   position: relative;
   width: 100%;
@@ -271,6 +283,7 @@ html {
   justify-content:center;
   overflow: hidden;
 }
+/* Home image inner item image styling */
 .home-img .img-box .img-item img {
   position: absolute;
   top: 30px;
@@ -279,6 +292,8 @@ html {
   object-fit: cover;
   mix-blend-mode:lighten;
 }
+
+/* Bars box container for background animation */
 .bars-box {
   position: fixed;
   top: 0;
@@ -292,7 +307,7 @@ html {
   z-index: -1;
   pointer-events: none;
 }
-
+/* Bar element styling and animation */
 .bar {
   width: 10px;
   height: 100px;
@@ -300,7 +315,7 @@ html {
   animation: growShrink 1s linear infinite;
   animation-delay: calc(var(--i) * 0.1s);
 }
-
+/* Keyframes for bar grow and shrink animation */
 @keyframes growShrink {
   0%, 100% {
     height: 20px;
@@ -311,8 +326,7 @@ html {
     background-color: #ffffff;
   }
 }
-
-
+/* Bars animation container for background effect */
 .bars-animaion{
     position:absolute;
     width: 100%;
@@ -320,6 +334,7 @@ html {
     display: flex;
     z-index: -1;
 }
+/* Bars animation bar styling and initial transform */
 .bars-animaion .bar{
     width: 100%;
     height: 100%;
@@ -329,7 +344,7 @@ html {
     animation: show-bars 0.5s ease-in-out forwards;
     animation-delay: calc(0.1s * var(--i));
 }
-
+/* Keyframes for showing bars animation */
 @keyframes show-bars{
     100% {
         transform: translateY(0%);
@@ -350,7 +365,7 @@ html {
   animation: show-content 1.5s linear forwards;
   animation-delay: 1.8s;
 }
-
+/* About content container */
 .about-content {
   display: flex;
   align-items: center;
@@ -358,28 +373,29 @@ html {
   width: 100%;
   gap: 50px;
 }
-
+/* About image container */
 .about-img {
   flex: 1;
 }
-
+/* About info text container */
 .about-info {
   flex: 1;
   text-align: left;
 }
-
+/* About info heading styling */
 .about-info h2 {
   font-size: 40px;
   color: #7cf03d;
   margin-bottom: 20px;
 }
-
+/* About info paragraph styling */
 .about-info p {
   font-size: 18px;
   line-height: 1.6;
   max-width: 800px;
+  
 }
-
+/* About image box styling (similar to home image box) */
 .about-img .img-box {
   position: relative;
   width: 30vw;
@@ -391,7 +407,7 @@ html {
   align-items: center;
   overflow: hidden;
 }
-
+/* About image box pseudo-elements for rotating border effect */
 .about-img .img-box::before,
 .about-img .img-box::after {
   content: "";
@@ -403,11 +419,11 @@ html {
   transform: rotate(0deg);
   animation: rotate-border 10s linear infinite;
 }
-
+/* Delaying the after pseudo-element's animation */
 .about-img .img-box::after {
   animation-delay: -5s;
 }
-
+/* About image inner item styling */
 .about-img .img-box .img-item {
   position: relative;
   width: 100%;
@@ -420,7 +436,7 @@ html {
   justify-content: center;
   overflow: hidden;
 }
-
+/* About image styling */
 .about-img .img-box .img-item img {
   position: absolute;
   top: 30px;
@@ -430,7 +446,7 @@ html {
   mix-blend-mode: lighten;
 }
 
-
+/* Bars animation container */
 .bars-animation {
   position: absolute;
   width: 100%;
@@ -440,103 +456,27 @@ html {
   top: 0;
   left: 0;
 }
-
+/* Bars animation bar styling */
 .bars-animaion .bar {
   width: 100%;
   height: 100%;
   background: #1f242d;
   transform: translateY(-100%);
 }
+/* Activating the bars animation */
 .bars-animaion.active .bar {
   animation: show-bars 0.5s ease-in-out forwards;
   animation-delay: calc(0.1s * var(--i));
 }
 
-
+/* Keyframes for showing bars animation */
 @keyframes show-bars {
   100% {
     transform: translateY(0%);
   }
 }
-/* ... Resume Section Styling 
 
-.resume {
-  background: #1f242d;
-  color: #fff;
-  padding: 60px 9%;
-}
-
-.resume-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #23265a;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-  padding: 40px 32px;
-}
-
-.resume-box {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.resume-box h2 {
-  font-size: 2.2rem;
-  color: #7cf03d;
-  margin-bottom: 10px;
-}
-
-.resume-box .desc {
-  font-size: 1.1rem;
-  color: #ccc;
-}
-
-.resume-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.resume-item {
-  background: #292c47;
-  border-radius: 12px;
-  padding: 24px 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.2s;
-}
-
-.resume-item:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 6px 24px rgba(124, 240, 61, 0.15);
-}
-
-.resume-item .year {
-  font-weight: 600;
-  color: #7cf03d;
-  margin-bottom: 6px;
-}
-
-.resume-item h3 {
-  font-size: 1.3rem;
-  margin: 4px 0 6px 0;
-  color: #fff;
-}
-
-.resume-item .company {
-  font-size: 1rem;
-  color: #b0b3d6;
-  margin-bottom: 8px;
-}
-
-.resume-item p {
-  color: #d1d1d1;
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-*/
-
-/* Resume Section */
-
+/* --- Resume Section --- */
 .resume {
   background: #181c23;
   color: #fff;
@@ -546,40 +486,40 @@ html {
   animation: show-content 1.5s linear forwards;
   animation-delay: 2s;
 }
-
+/* Resume container styling */
 .resume-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
-
+/* Resume header styling */
 .resume-header {
   text-align: left;
   margin-bottom: 32px;
 }
-
+/* Resume header heading styling */
 .resume-header h2 {
   font-size: 2.5rem;
   font-weight: 800;
   color: #fff;
 }
-
+/* Resume header heading span for colored text */
 .resume-header h2 span {
   color: #7cf03d;
 }
-
+/* Resume header paragraph styling */
 .resume-header p {
   color: #b0b3d6;
   font-size: 1.1rem;
   margin-top: 10px;
 }
-
+/* Resume grid layout */
 .resume-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 }
-
+/* Resume card styling */
 .resume-card {
   background: #23283b;
   border-radius: 16px;
@@ -589,7 +529,7 @@ html {
   flex-direction: column;
   gap: 10px;
 }
-
+/* Resume year styling */
 .resume-year {
   color: #7cf03d;
   font-weight: 700;
@@ -597,14 +537,14 @@ html {
   margin-bottom: 6px;
   display: block;
 }
-
+/* Resume card heading styling */
 .resume-card h3 {
   font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
   margin: 0 0 4px 0;
 }
-
+/* Resume type styling with dot */
 .resume-type {
   color: #b0b3d6;
   font-size: 1rem;
@@ -613,7 +553,7 @@ html {
   align-items: center;
   gap: 6px;
 }
-
+/* Dot element for resume type */
 .resume-type .dot {
   width: 10px;
   height: 10px;
@@ -621,13 +561,13 @@ html {
   border-radius: 50%;
   display: inline-block;
 }
-
+/* Resume card paragraph styling */
 .resume-card p {
   color: #d1d1d1;
   font-size: 1rem;
   margin-bottom: 0;
 }
-
+/* Resume education heading styling */
 .resume-education h2 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -635,12 +575,12 @@ html {
   margin-bottom: 24px;
   text-align: left;
 }
-
+/* Resume education heading span for colored text */
 .resume-education h2 span {
   color: #7cf03d; 
 }
 
-
+/* Resume info heading styling */
 .resume-info h2 {
   font-size: 2.2rem;
   font-weight: 800;
@@ -648,13 +588,13 @@ html {
   margin-bottom: 18px;
   letter-spacing: 1px;
 }
-
+/* Resume info paragraph styling */
 .resume-info p {
   color: #b0b3d6;
   font-size: 1.08rem;
   margin-bottom: 22px; 
 }
-
+/* Resume info button styling */
 .resume-info .btn {
   display: inline-block;
   padding: 14px 32px;
@@ -678,38 +618,38 @@ html {
   color: #fff;
   padding: 60px 0;
 }
-
+/* Skills container styling */
 .skills-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 24px;
   text-align: center;
 }
-
+/* Skills headin styling */
 .skills .heading {
   font-size: 2.3rem;
   font-weight: 800;
   color: #fff;
   margin-bottom: 10px;
 }
-
+/* Skills heading span for colored text */
 .skills .heading span {
   color: #7cf03d;
 }
-
+/* Skills description styling */
 .skills .desc {
-  color: #b0b3d6;
+  color: #fff;
   font-size: 1.1rem;
   margin-bottom: 32px;
 }
-
+/* Skills list grid layout */
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 28px;
   justify-items: center;
 }
-
+/* Individual skill item styling */
 .skill-item {
   background: #23283b;
   border-radius: 20px;
@@ -722,18 +662,18 @@ html {
   align-items: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
+/* Skill item hover effect */
 .skill-item:hover {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 8px 32px rgba(124, 240, 61, 0.12);
 }
-
+/* Skill icon styling */
 .skill-item i {
   font-size: 3rem;
   color: #7cf03d;
   margin-bottom: 12px;
 }
-
+/* Skill name styling */
 .skill-item span {
   color: #fff;
   font-size: 1.1rem;
@@ -749,14 +689,14 @@ html {
   padding: 60px 0;
   font-family: "Poppins", sans-serif;
 }
-
+/* Projects container styling */
 .projects-container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 40px 24px;
   text-align: center;
 }
-
+/* Projects heading styling */
 .projects .heading {
   font-size: 2.3rem;
   font-weight: 800;
@@ -764,11 +704,11 @@ html {
   margin-bottom: 10px;
   letter-spacing: 1px;  
 }
-
+/* Projects heading span for colored text */
 .projects .heading span {
   color: #7cf03d;
 }
-
+/* Projects description styling */
 .projects .desc {
   color: #b0b3d6;
   font-size: 1.1rem;
@@ -776,14 +716,14 @@ html {
   font-weight: 500;
   letter-spacing: 0.2px;
 }
-
+/* Projects list grid layout */
 .projects-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 32px;
   justify-items: center;
 }
-
+/* Individual project card styling */
 .project-card {
   background: #23283b;
   border-radius: 18px;
@@ -795,12 +735,12 @@ html {
   transition: transform 0.2s, box-shadow 0.2s;
   font-family:  "Poppins", sans-serif;
 }
-
+/* Project card hover effect */
 .project-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 32px rgba(124, 240, 61, 0.12);
 }
-
+/* Project card image styling */
 .project-card img {
   width: 100%;
   max-width: 200px;
@@ -810,7 +750,7 @@ html {
   margin-bottom: 14px;
   background: #181c23;
 }
-
+/* Project card heading styling */
 .project-card h3 {
   color: #7cf03d;
   font-size: 1.2rem;
@@ -819,14 +759,14 @@ html {
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
 }
-
+/* Project card paragraph styling */
 .project-card p {
   color: #d1d1d1;
   font-size: 1rem;
   margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
 }
-
+/* Projects languages container */
 .project-langs {
   display: flex;
   gap: 10px;
@@ -834,7 +774,7 @@ html {
   justify-content: center;
   margin-top: 8px;
 }
-
+/* Project language tag styling */
 .project-langs span {
   background: #181c23;
   color: #7cf03d;
@@ -853,7 +793,7 @@ html {
   background-color: #1f242d;
   color: #fff;
 }
-
+/* Contact container with flexbox */
 .contact-section .container {
   display: flex;
   flex-wrap: wrap;
@@ -861,22 +801,22 @@ html {
   justify-content: space-between;
   align-items: flex-start;
 }
-
+/* Contact info section */
 .contact-info {
   flex: 1;
   min-width: 300px;
 }
-
+/* Contact info heading styling */
 .contact-info h2 {
   font-size: 32px;
   margin-bottom: 20px;
   color: #fff;
 }
-
+/* Contact info heading span for colored text */
 .contact-info h2 span {
   color: #7cf03d;
 }
-
+/* Contact info item styling */
 .contact-info .info-item {
   display: flex;
   align-items: center;
@@ -884,27 +824,28 @@ html {
   font-size: 18px;
   gap: 12px;
 }
-
+/* Contact info icon styling */
 .contact-info .info-item i {
   color: #7cf03d;
   font-size: 24px;
 }
+/* Contact info paragraph styling */
 .contact-info .info-item p {
   margin-top: 5px;
   margin-bottom: 0;
 }
-
+/* Contact form section */
 .contact-form {
   flex: 1;
   min-width: 300px;
 }
-
+/* Contact form styling */
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
+/* Contact form input and textarea styling */
 .contact-form input,
 .contact-form textarea {
   padding: 15px;
@@ -914,12 +855,12 @@ html {
   color: #fff;
   font-size: 16px;
 }
-
+/* Contact form placeholder color */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #aaa;
 }
-
+/* Contact form button styling (similar to home btn) */
 .contact-form .btn {
  
    display: inline-block;
@@ -933,7 +874,7 @@ html {
    font-weight: 600;
    transition: 0.5s; 
 }
-
+/* Contact form button hover effect */
 .contact-form .btn:hover {
   background: transparent;
   color: #7cf03d;
@@ -949,31 +890,32 @@ footer {
   border-top: 1px solid #2c2f39;
   margin-top: 20px;
 }
-
+/* Footer paragraph styling */
 footer p {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 5px;
   color: #7cf03d;
 }
-
+/* Footer social icons container */
 footer .social-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
+/* Footer social icon link styling */
 footer .social-icons a {
   color: #fff;
   font-size: 24px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
+/* Footer social icon link hover effect */
 footer .social-icons a:hover {
   color: #7cf03d;
   transform: translateY(-5px);
 }
+/* Resetting margin and padding for contact and footer sections */
  .contact, footer {
   margin: 0;
   padding: 0;
