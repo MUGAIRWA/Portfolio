@@ -889,6 +889,10 @@ html {
   color: #7cf03d;
   font-size: 24px;
 }
+.contact-info .info-item p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 
 .contact-form {
   flex: 1;
@@ -936,4 +940,41 @@ html {
   box-shadow: none;
 }
 
+/* Footer Styling */
+footer {
+  background-color: #1f242d;
+  color: #fff;
+  padding: 30px 9%;
+  text-align: center;
+  border-top: 1px solid #2c2f39;
+  margin-top: 20px;
+}
 
+footer p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #7cf03d;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer .social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #7cf03d;
+  transform: translateY(-5px);
+}
+ .contact, footer {
+  margin: 0;
+  padding: 0;
+}
