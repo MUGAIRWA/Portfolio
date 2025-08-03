@@ -4,7 +4,7 @@
 
 This is a **responsive personal portfolio website** built using only **HTML and CSS**, with no JavaScript dependencies. The portfolio showcases my background, skills, education, experience, and contact details in a clean and minimal layout.
 
-> 📌 Live Demo: _[Upload to GitHub Pages or Netlify and paste the link here]_
+> 📌 Live Demo: https://mugairwa.github.io/Portfolio
 
 ---
 
@@ -40,7 +40,6 @@ It serves as an online resume and personal branding platform.
 ## ✨ Features
 
 - 📌 Pure HTML and CSS implementation (no JavaScript).
-- 📱 Mobile-friendly and responsive design.
 - 🔗 Smooth scrolling navigation.
 - 💡 Clean and modern user interface.
 - 📷 Image and icon integration (using [Boxicons](https://boxicons.com/)).
@@ -96,8 +95,8 @@ portfolio/
 1. **Clone or Download**
 
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
+   git clone https://github.com/yourusername/Portfolio.git
+   cd Portfolio
    ```
 
 2. **Open in Browser**
@@ -121,8 +120,32 @@ portfolio/
 ---
 
 ## 📸 Screenshots
+ Below are screenshot for the portfolio
+>
+> Home
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e0b66860-a686-45c2-b4d7-200a31d83ae0" />
 
-> *Include screenshots of each section here (Home, About, Resume, etc.) after deployment.*
+> About
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/87adc857-775a-42b2-b2d0-c81850aa743e" />
+
+> Resume
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a4556c2d-217a-478b-9aad-1556c63f1479" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a42adfb9-dbb8-45b8-ae08-06605f6e0b8c" />
+
+> Skills
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f77d85f9-4a01-4de1-bf88-1be2b21aa228" />
+
+> Projects
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dd03fd86-9f25-42b2-bc11-c71ddf1b604e" />
+
+> Contact
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4f9653be-a746-4ace-96d2-8f79b2279142" />
+
+
+
+
+
+
 
 
 ---
